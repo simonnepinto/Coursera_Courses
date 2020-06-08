@@ -1,0 +1,129 @@
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 175%;
+	text-align: center;
+	color : #8B0000;
+	height: 50px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+div{
+	margin: 1%;
+    margin-top: 50px;
+    height: 50px;
+    position: relative;
+}
+
+p{
+	float: left;
+	padding: 10px;
+	margin-top: 40px;
+	overflow: auto;
+	background-color: #FFFFF0;
+}
+
+header{
+	font-size: 125%;
+	text-align: right;
+	border: 1px solid black;
+	margin-bottom: 5px;
+	padding: 5px;
+	width : max-content;
+	float: right;
+}
+
+
+#box{
+	width: 100%;
+}
+
+#Clothes > header{
+	background-color: #B0E0E6;
+	color: 	#000080;
+}
+
+#Accessories > header{
+	background-color: #FFDAB9;
+	color: 	#DC143C;
+}
+
+#Essentials > header{
+	background-color: #E6E6FA;
+	color: 	#4B0082;
+}
+
+*{
+	box-sizing: border-box;
+	background-color: #FA8072;
+}
+
+
+/*------For desktop-------*/
+
+@media (min-width: 992px) {
+	#Clothes{
+		width : 31%;
+		float: left;
+	}
+	#Accessories{
+		width : 31%;
+		float: left;
+	}
+	#Essentials{
+		width : 31%;
+		float: left;
+	}
+}
+
+/*------For tablet-------*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#Clothes{
+		width : 50%;
+	}
+	#Accessories{
+		width : 50%;
+	}
+	#Essentials{
+		width : 100%;	
+	}
+}
+
+/*------For mobile-------*/
+
+@media (max-width: 767px) {
+	#Clothes{
+		width : 100%;
+	}
+	#Accessories{
+		width : 100%;
+	}
+	#Essentials{
+		width : 100%;
+	}
+}
+
+#Clothes{
+	background-color: #FFFFF0;
+	border: 1px solid black;
+	padding : 10px;
+	height: 300px;
+	float: left;
+}
+
+#Accessories{
+	background-color: #FFFFF0;
+	border: 1px solid black;
+	padding : 10px;
+	height: 300px;
+	float: left;
+}
+
+#Essentials{
+	background-color: #FFFFF0;
+	border: 1px solid black;
+	padding : 10px;
+	height: 300px;
+	float: left;
+}
