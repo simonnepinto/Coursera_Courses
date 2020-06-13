@@ -80,10 +80,10 @@ header{
 
 @media (min-width: 768px) and (max-width: 991px) {
 	#Clothes{
-		width : 50%;
+		width : 48%;
 	}
 	#Accessories{
-		width : 50%;
+		width : 48%;
 	}
 	#Essentials{
 		width : 100%;	
