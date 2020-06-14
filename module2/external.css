@@ -1,3 +1,9 @@
+
+* {
+	box-sizing: border-box;
+}
+
+
 h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 175%;
@@ -8,22 +14,37 @@ h1 {
 	margin-top: 30px;
 }
 
-div{
-	margin: 1%;
-    margin-top: 50px;
-    height: 50px;
-    position: relative;
+body{
+	background-color: #FA8072;
 }
 
-p{
-	float: left;
+p {
 	padding: 10px;
+	margin: 0;
 	margin-top: 40px;
-	overflow: auto;
-	background-color: #FFFFF0;
 }
 
-header{
+.container {
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+section {
+	border:	1px solid black;
+	background-color: #FFEFD5;
+	width: 100%;
+	height: 300px;
+	font-family: Helvetica;
+	color: black;
+	position: relative;
+	overflow: auto;
+}
+
+#chicken {
 	font-size: 125%;
 	text-align: right;
 	border: 1px solid black;
@@ -31,99 +52,66 @@ header{
 	padding: 5px;
 	width : max-content;
 	float: right;
+	background-color: #FF4500;
 }
 
+#beef {
+	font-size: 125%;
+	text-align: right;
+	border: 1px solid black;
+	margin-bottom: 5px;
+	padding: 5px;
+	width : max-content;
+	float: right;
+	background-color: #20B2AA;
+}
 
-#box{
+#sushi {
+	font-size: 125%;
+	text-align: right;
+	border: 1px solid black;
+	margin-bottom: 30px;
+	padding: 5px;
+	width : max-content;
+	float: right;
+	background-color: #008080;
+}
+
+.row {
 	width: 100%;
 }
 
-#Clothes > header{
-	background-color: #B0E0E6;
-	color: 	#000080;
-}
-
-#Accessories > header{
-	background-color: #FFDAB9;
-	color: 	#DC143C;
-}
-
-#Essentials > header{
-	background-color: #E6E6FA;
-	color: 	#4B0082;
-}
-
-*{
-	box-sizing: border-box;
-	background-color: #FA8072;
-}
-
-
-/*------For desktop-------*/
+/* Desktop view */
 
 @media (min-width: 992px) {
-	#Clothes{
-		width : 31%;
-		float: left;
-	}
-	#Accessories{
-		width : 31%;
-		float: left;
-	}
-	#Essentials{
-		width : 31%;
-		float: left;
-	}
+ 
+  .col-lg-4 {
+    width: 33.33%;
+    float: left;
+  }
+  
 }
 
-/*------For tablet-------*/
+/* Tablet view */
 
 @media (min-width: 768px) and (max-width: 991px) {
-	#Clothes{
-		width : 48%;
-	}
-	#Accessories{
-		width : 48%;
-	}
-	#Essentials{
-		width : 100%;	
-	}
+  
+  .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+  
+  .col-md-12 {
+    width: 100%;
+    float: left;
+  }
 }
 
-/*------For mobile-------*/
+/* Mobile view */
 
-@media (max-width: 767px) {
-	#Clothes{
-		width : 100%;
-	}
-	#Accessories{
-		width : 100%;
-	}
-	#Essentials{
-		width : 100%;
-	}
-}
-
-#Clothes{
-	background-color: #FFFFF0;
-	border: 1px solid black;
-	padding : 10px;
-	height: 300px;
-	float: left;
-}
-
-#Accessories{
-	background-color: #FFFFF0;
-	border: 1px solid black;
-	padding : 10px;
-	height: 300px;
-	float: left;
-}
-
-#Essentials{
-	background-color: #FFFFF0;
-	border: 1px solid black;
-	padding : 10px;
-	height: 300px;
-	float: left;
+@media (max-width: 768px) {
+  .col-sm-12 {
+    width: 100%;
+    float: left;
+  }
 }
