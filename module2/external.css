@@ -109,7 +109,7 @@ section {
 
 /* Mobile view */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .col-sm-12 {
     width: 100%;
     float: left;
